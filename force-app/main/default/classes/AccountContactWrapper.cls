@@ -6,8 +6,7 @@ public class AccountContactWrapper {
     public AccountContactWrapper(Account acc,List<Contact> contacts){
         this.account = acc;
         this.contacts = contacts;
-        system.debug('Hello');
-        
+        system.debug('Hellof from');
     }
     
 }
