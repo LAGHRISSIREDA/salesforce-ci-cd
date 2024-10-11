@@ -1,0 +1,25 @@
+name: Deploy to Sandbox
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Salesforce CLI
+        uses: amtrack/sfdx-cli-action@v1
+
+      - name: Authenticate with Salesforce
+        env:
+          SFDX_AUTH_URL: ${{ secrets.SFDX_AUTH_URL }}
+        run: sfdx auth:sfdxurl:store -f $SFDX_AUTH_URL -a my-sandbox
+
+      - name: Deploy to Salesforce Sandbox
+        run: sfdx force:source:deploy -p force-app -u my-sandbox --testlevel RunLocalTests
