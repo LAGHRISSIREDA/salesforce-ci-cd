@@ -15,6 +15,17 @@ public class CommunitiesSelfRegController {
         if (expId != null) {
             Site.setExperienceId(expId); 
             system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
+            system.debug('teeeest');
         }    
     }
     
