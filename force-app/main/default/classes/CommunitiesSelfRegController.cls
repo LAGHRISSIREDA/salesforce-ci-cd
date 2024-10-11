@@ -23,9 +23,7 @@ public class CommunitiesSelfRegController {
             system.debug('teeeest');
             system.debug('teeeest');
             system.debug('teeeest');
-            system.debug('teeeest');
-            system.debug('teeeest');
-            system.debug('teeeest');
+         
         }    
     }
     
