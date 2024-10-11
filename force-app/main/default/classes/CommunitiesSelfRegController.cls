@@ -14,6 +14,7 @@ public class CommunitiesSelfRegController {
         String expid = ApexPages.currentPage().getParameters().get('expid');            
         if (expId != null) {
             Site.setExperienceId(expId); 
+            system.debug('teeeest');
         }    
     }
     
